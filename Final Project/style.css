@@ -1,0 +1,241 @@
+body {
+  position: relative; 
+}
+.bg-1 {
+  background: url(image/6.jpg);
+  max-width: 1500px;
+  height: 600px;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+.bg-2 {
+  background: #2c2c2c;
+  height: 700px;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+.bg-3 {
+  background: #f1f1f1;
+  max-width: 1500px;
+  height: 700px;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+.bg-4 {
+  background: url(image/7.jpg);
+  max-width: 1500px;
+  height: 800px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.bg-5 {
+  background: #2c2c2c;
+  height: 200px;
+  padding-top: 90px;
+  padding-bottom: 10px;
+}
+.bg-6 {
+  background: #f1f1f1;
+  max-width: 1500px;
+  height: 1250px;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+.ei {
+  font: 28px Montserrat, sans-serif;
+  color: #f5f6f7;
+}
+.to {
+  font: 200px Montserrat, sans-serif;
+  text-shadow: 5px 5px;
+  color: #323231;
+}
+.ct {
+  font: Montserrat, sans-serif;
+  color: #f5f6f7;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+  color: #323231 !important;
+}
+ul.nav-pills {
+  top: 20px;
+  position: fixed;
+}
+.person {
+  border: 10px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  width: 60%;
+  height: 60%;
+  opacity: 0.7;
+}
+.person:hover {
+  border-color: #f1f1f1;
+}
+.ckl {
+  border: 10px solid transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  width: 30%;
+  height: 30%;
+  opacity: 0.7;
+}
+.ckl:hover {
+  border-color: #f1f1f1;
+}
+.aq {
+  border: 10px solid transparent;
+  width: 250px;
+  height: 250px;
+}
+.aq:hover {
+  border-color: #f1f1f1;
+}
+.carousel-inner {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+}
+
+footer a {
+  color: #f5f5f5;
+}
+
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
+.slideanim {
+  visibility:hidden;
+}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+.text-focus-in {
+	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+ @-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.rotate-in-2-cw {
+	-webkit-animation: rotate-in-2-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: rotate-in-2-cw 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
